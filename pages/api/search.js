@@ -16,5 +16,5 @@ export default function handler(req, res) {
       category.toLowerCase().indexOf(req.query.q) != -1
   );
 
-  res.status(200).send({ results });
+  res.status(200).json({ results });
 }
