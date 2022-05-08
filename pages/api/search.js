@@ -16,5 +16,5 @@ export default function handler(req, res) {
       category.toLowerCase().includes(req.query.q)
   );
 
-  res.status(200).json(JSON.stringify({ results }));
+  res.status(200).send({ results });
 }
